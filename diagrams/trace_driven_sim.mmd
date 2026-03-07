@@ -1,0 +1,15 @@
+flowchart LR
+    T["Trace
+(pre-recorded
+network conditions)"] --> A2["Algorithm
+under test"]
+    A2 --> O2["Simulated
+Outcome"]
+
+    classDef yellow fill:#df8e1d,stroke:#fe640b,color:#eff1f5
+    classDef green fill:#40a02b,stroke:#179299,color:#eff1f5
+    classDef teal fill:#179299,stroke:#04a5e5,color:#eff1f5
+
+    class T yellow
+    class A2 green
+    class O2 teal

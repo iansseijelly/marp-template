@@ -1,0 +1,15 @@
+flowchart LR
+    N["Network
+Conditions"] --> A["ABR
+Algorithm"]
+    A --> O["Outcome
+Quality / Rebuffer"]
+    O -->|feedback| A
+
+    classDef mauve fill:#8839ef,stroke:#7287fd,color:#eff1f5
+    classDef blue fill:#1e66f5,stroke:#7287fd,color:#eff1f5
+    classDef teal fill:#179299,stroke:#04a5e5,color:#eff1f5
+
+    class N mauve
+    class A blue
+    class O teal
