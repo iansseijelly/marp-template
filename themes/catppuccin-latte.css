@@ -1,0 +1,232 @@
+/* @theme catppuccin-latte */
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Catppuccin Latte */
+  --rosewater: #dc8a78;
+  --flamingo:  #dd7878;
+  --pink:      #ea76cb;
+  --mauve:     #8839ef;
+  --red:       #d20f39;
+  --maroon:    #e64553;
+  --peach:     #fe640b;
+  --yellow:    #df8e1d;
+  --green:     #40a02b;
+  --teal:      #179299;
+  --sky:       #04a5e5;
+  --sapphire:  #209fb5;
+  --blue:      #1e66f5;
+  --lavender:  #7287fd;
+  --text:      #000000;
+  --subtext1:  #000000;
+  --subtext0:  #000000;
+  --overlay2:  #7c7f93;
+  --overlay1:  #8c8fa1;
+  --overlay0:  #9ca0b0;
+  --surface2:  #acb0be;
+  --surface1:  #bcc0cc;
+  --surface0:  #ccd0da;
+  --base:      #ffffff;
+  --mantle:    #e6e9ef;
+  --crust:     #dce0e8;
+  --applegreen: #34C759;
+  /* ── Swap this one variable to change the accent color ── */
+  --accent:    var(--applegreen);
+}
+
+/* ── Base ─────────────────────────────────────── */
+section {
+  background: var(--base);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 24px;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  padding: 36px 52px 32px;
+  justify-content: center;
+  text-align: left;
+}
+
+/* ── Headings ─────────────────────────────────── */
+h1 {
+  color: var(--text);
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 14px 0;
+  padding-bottom: 16px;
+  line-height: 1.15;
+}
+
+h2 {
+  color: var(--subtext1);
+  font-size: 1.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 16px 0 6px 0;
+  line-height: 1.15;
+}
+
+h3 {
+  color: var(--subtext0);
+  font-size: 1.10em;
+  font-weight: 600;
+  margin: 10px 0 4px 0;
+  line-height: 1.15;
+}
+
+/* ── Body text ────────────────────────────────── */
+p {
+  margin: 2px 0 8px 0;
+  color: var(--subtext1);
+  font-size: 1.00em;
+  line-height: 1.45;
+}
+strong { color: var(--accent); font-weight: 600; }
+em { color: var(--accent); font-style: normal; }
+
+/* ── Lists ────────────────────────────────────── */
+ul, ol {
+  margin: 4px 0 10px 0;
+  padding-left: 1.1em;
+}
+li {
+  color: var(--subtext1);
+  font-size: 1.00em;
+  line-height: 1.45;
+  margin-bottom: 5px;
+}
+li::marker { color: var(--overlay0); }
+
+/* ── Code ──────────────────────────────────────── */
+code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.00em;
+  color: var(--accent);
+  background: var(--mantle);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+/* ── Tables ────────────────────────────────────── */
+table {
+  font-size: 1.00em;
+  color: var(--text);
+  width: 100%;
+  border-collapse: collapse;
+  margin: 6px 0;
+  line-height: 1.35;
+}
+th {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95em;
+  border-bottom: 2px solid var(--surface1);
+  background: var(--mantle);
+  padding: 6px 10px;
+  text-align: left;
+}
+td {
+  border-bottom: 1px solid var(--surface0);
+  padding: 5px 10px;
+}
+
+/* ── Blockquotes ───────────────────────────────── */
+blockquote {
+  background: var(--mantle);
+  border-left: 3.5px solid var(--accent);
+  padding: 10px 16px;
+  margin: 8px 0 6px 0;
+  border-radius: 0 4px 4px 0;
+}
+blockquote::before, blockquote::after { content: none !important; }
+blockquote p {
+  color: var(--subtext1);
+  font-size: 0.78em;
+  margin: 0;
+}
+blockquote strong { color: var(--accent); }
+blockquote em { color: var(--teal); }
+
+/* ── Images ────────────────────────────────────── */
+img { border-radius: 4px; }
+img[alt~="center"] { display: block; margin: 4px auto; }
+img[alt~="shadow"] { box-shadow: 0 2px 12px rgba(0,0,0,0.1); }
+
+/* ── Title/lead slide ──────────────────────────── */
+section.lead {
+  background: var(--base);
+  text-align: center;
+  justify-content: center;
+  padding: 48px 64px;
+}
+section.lead h1 {
+  border-bottom: none;
+  font-size: 1.55em;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+section.lead p { color: var(--subtext0); font-size: 0.82em; }
+section.lead blockquote {
+  text-align: left;
+  max-width: 520px;
+  margin: 12px auto 0;
+}
+
+/* ── Grid layouts ───────────────────────────────── */
+.cols { display: flex; gap: 24px; align-items: start; }
+.cols > .col { flex: 1; min-width: 0; }
+.cols > .col-60 { flex: 3; min-width: 0; }
+.cols > .col-40 { flex: 2; min-width: 0; }
+.cols > .col-55 { flex: 55; min-width: 0; }
+.cols > .col-45 { flex: 45; min-width: 0; }
+
+/* ── Cards ──────────────────────────────────────── */
+.card {
+  background: var(--mantle);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 10px 0;
+  border-left: 3px solid var(--surface2);
+}
+.card h3 { margin: 0 0 6px 0; }
+.card p, .card li { font-size: 0.78em; }
+
+.card-peach { border-left-color: var(--peach); }
+.card-yellow { border-left-color: var(--yellow); }
+.card-green { border-left-color: var(--green); }
+.card-teal { border-left-color: var(--teal); }
+.card-blue { border-left-color: var(--blue); }
+.card-red { border-left-color: var(--red); }
+.card-mauve { border-left-color: var(--mauve); }
+
+/* ── Stat pills ─────────────────────────────────── */
+.stat {
+  display: inline-block;
+  background: var(--mantle);
+  border-radius: 6px;
+  padding: 10px 18px;
+  margin: 3px 5px;
+  text-align: center;
+  border: 1px solid var(--surface0);
+}
+.stat .num {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: var(--yellow);
+  display: block;
+  line-height: 1.2;
+}
+.stat .label {
+  font-size: 0.62em;
+  color: var(--subtext0);
+}
+
+/* ── Utility ───────────────────────────────────── */
+.small { font-size: 1.00em; color: var(--subtext0); }
+.center { text-align: center; }
+.mt { margin-top: 16px; }
+.mt2 { margin-top: 24px; }
+.mt3 { margin-top: 32px; }

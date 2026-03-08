@@ -1,0 +1,17 @@
+/* Catppuccin Mocha palette for Mermaid diagrams */
+/* https://github.com/catppuccin/catppuccin */
+
+.node.rosewater > * { fill: #f5e0dc !important; stroke: #f5e0dc !important; color: #1e1e2e !important; }
+.node.flamingo > * { fill: #f2cdcd !important; stroke: #f2cdcd !important; color: #1e1e2e !important; }
+.node.pink > * { fill: #f5c2e7 !important; stroke: #f5c2e7 !important; color: #1e1e2e !important; }
+.node.mauve > * { fill: #cba6f7 !important; stroke: #cba6f7 !important; color: #1e1e2e !important; }
+.node.red > * { fill: #f38ba8 !important; stroke: #f38ba8 !important; color: #1e1e2e !important; }
+.node.maroon > * { fill: #eba0ac !important; stroke: #eba0ac !important; color: #1e1e2e !important; }
+.node.peach > * { fill: #fab387 !important; stroke: #fab387 !important; color: #1e1e2e !important; }
+.node.yellow > * { fill: #f9e2af !important; stroke: #f9e2af !important; color: #1e1e2e !important; }
+.node.green > * { fill: #a6e3a1 !important; stroke: #a6e3a1 !important; color: #1e1e2e !important; }
+.node.teal > * { fill: #94e2d5 !important; stroke: #94e2d5 !important; color: #1e1e2e !important; }
+.node.sky > * { fill: #89dceb !important; stroke: #89dceb !important; color: #1e1e2e !important; }
+.node.sapphire > * { fill: #74c7ec !important; stroke: #74c7ec !important; color: #1e1e2e !important; }
+.node.blue > * { fill: #89b4fa !important; stroke: #89b4fa !important; color: #1e1e2e !important; }
+.node.lavender > * { fill: #b4befe !important; stroke: #b4befe !important; color: #1e1e2e !important; }
